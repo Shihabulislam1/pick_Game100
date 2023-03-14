@@ -78,7 +78,7 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
 
     //2.if score>=100 ?Game Over: Switch Player
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       playing = false;
       diceEl.classList.add('hidden');
       document
@@ -93,4 +93,4 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-btnNew.addEventListener('click',init)
+btnNew.addEventListener('click', init);
